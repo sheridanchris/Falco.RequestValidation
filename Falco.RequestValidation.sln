@@ -8,6 +8,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{861B
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ValidusSample", "samples\ValidusSample\ValidusSample.fsproj", "{158BC255-B383-4753-B1EE-B5534D464022}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FsToolkitSample", "samples\FsToolkitSample\FsToolkitSample.fsproj", "{C822706A-2A96-4E8F-ACE3-26FA3D29A02F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -16,6 +18,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{1DD6992F-2C51-46B6-A323-4CEBC66244F8} = {99ABF4EA-91AB-46DE-AB71-3259E20FC5CC}
 		{158BC255-B383-4753-B1EE-B5534D464022} = {861B554A-CB23-4BD5-BC9B-7FB7FF9BF166}
+		{C822706A-2A96-4E8F-ACE3-26FA3D29A02F} = {861B554A-CB23-4BD5-BC9B-7FB7FF9BF166}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1DD6992F-2C51-46B6-A323-4CEBC66244F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -26,5 +29,9 @@ Global
 		{158BC255-B383-4753-B1EE-B5534D464022}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{158BC255-B383-4753-B1EE-B5534D464022}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{158BC255-B383-4753-B1EE-B5534D464022}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C822706A-2A96-4E8F-ACE3-26FA3D29A02F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C822706A-2A96-4E8F-ACE3-26FA3D29A02F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C822706A-2A96-4E8F-ACE3-26FA3D29A02F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C822706A-2A96-4E8F-ACE3-26FA3D29A02F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
