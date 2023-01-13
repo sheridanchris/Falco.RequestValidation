@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{99ABF4EA-91AB-46DE-AB71-3259E20FC5CC}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Falco.RequestValidation", "src\Falco.RequestValidation\Falco.RequestValidation.fsproj", "{1DD6992F-2C51-46B6-A323-4CEBC66244F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1DD6992F-2C51-46B6-A323-4CEBC66244F8} = {99ABF4EA-91AB-46DE-AB71-3259E20FC5CC}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DD6992F-2C51-46B6-A323-4CEBC66244F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DD6992F-2C51-46B6-A323-4CEBC66244F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DD6992F-2C51-46B6-A323-4CEBC66244F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DD6992F-2C51-46B6-A323-4CEBC66244F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
