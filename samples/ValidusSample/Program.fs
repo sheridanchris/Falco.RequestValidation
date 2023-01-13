@@ -45,7 +45,6 @@ module CreateBudget =
                 { Name = budgetName
                   MonthlyIncome = monthlyIncome }
         }
-        |> Result.mapError ValidationErrors.toMap
 
     let handler: HttpHandler =
         let createBudget (request: ValidatedCreateBudgetRequest) : HttpHandler =
@@ -55,5 +54,7 @@ module CreateBudget =
                     return ()
                 }
 
-        let handleValidationErrors errors = Response.ofJson {| errors = errors |}
+        let handleValidationErrors errors =
+            Response.ofJson {| errors = ValidationErrors.toMap errors |}
+
         Request.mapValidateJson validateRequest createBudget handleValidationErrors

@@ -5,11 +5,11 @@ open Falco
 [<RequireQualifiedAccess>]
 module Request =
     let mapValidateJson
-        (validator: 'a -> Result<'b, Map<string, string list>>)
-        (onSuccess: 'b -> HttpHandler)
-        (onValidationErrors: Map<string, string list> -> HttpHandler)
+        (validator: 'record -> Result<'success, 'validationErrors>)
+        (onSuccess: 'success -> HttpHandler)
+        (onValidationErrors: 'validationErrors -> HttpHandler)
         =
-        let handleOk (record: 'a) : HttpHandler =
+        let handleOk (record: 'record) : HttpHandler =
             match validator record with
             | Ok result -> onSuccess result
             | Error validationErrors -> onValidationErrors validationErrors
