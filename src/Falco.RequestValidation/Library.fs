@@ -18,7 +18,7 @@ module Request =
         (validator: 'record -> Result<'success, 'validationErrors>)
         (onSuccess: 'success -> HttpHandler)
         (onValidationErrors: 'validationErrors -> HttpHandler)
-        =
+        : HttpHandler =
         Request.mapJson (validate validator onSuccess onValidationErrors)
 
     let mapValidateRoute
@@ -26,7 +26,7 @@ module Request =
         (validator: 'value -> Result<'success, 'validationErrors>)
         (onSuccess: 'success -> HttpHandler)
         (onValidationErrors: 'validationErrors -> HttpHandler)
-        =
+        : HttpHandler =
         Request.mapRoute reader (validate validator onSuccess onValidationErrors)
 
     let mapValidateQuery
@@ -34,5 +34,5 @@ module Request =
         (validator: 'value -> Result<'success, 'validationErrors>)
         (onSuccess: 'success -> HttpHandler)
         (onValidationErrors: 'validationErrors -> HttpHandler)
-        =
+        : HttpHandler =
         Request.mapQuery reader (validate validator onSuccess onValidationErrors)
