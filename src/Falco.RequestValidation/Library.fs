@@ -28,3 +28,11 @@ module Request =
         (onValidationErrors: 'validationErrors -> HttpHandler)
         =
         Request.mapRoute reader (validate validator onSuccess onValidationErrors)
+
+    let mapValidateQuery
+        (reader: QueryCollectionReader -> 'value)
+        (validator: 'value -> Result<'success, 'validationErrors>)
+        (onSuccess: 'success -> HttpHandler)
+        (onValidationErrors: 'validationErrors -> HttpHandler)
+        =
+        Request.mapQuery reader (validate validator onSuccess onValidationErrors)
