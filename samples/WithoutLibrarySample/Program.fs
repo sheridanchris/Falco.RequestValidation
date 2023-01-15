@@ -24,7 +24,7 @@ module PositiveDecimal =
         if value >= 0m then
             Ok(PositiveDecimal value)
         else
-            Error "Value cannot be "
+            Error "Value cannot be negative"
 
 module CreateBudget =
     type CreateBudgetRequest =
