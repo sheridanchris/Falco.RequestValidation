@@ -1,4 +1,4 @@
-﻿namespace Falco.RequestValidation
+﻿namespace Falco
 
 open Falco
 
