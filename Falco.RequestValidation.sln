@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F62FA8FB
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Falco.RequestValidation.Tests", "tests\Falco.RequestValidation.Tests\Falco.RequestValidation.Tests.fsproj", "{5DE1BB54-5B95-4E86-85CF-5C4371FB2D4D}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "WithoutLibrarySample", "samples\WithoutLibrarySample\WithoutLibrarySample.fsproj", "{911667BD-D6F3-4EFE-8064-9A4E3CEC3B74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,7 @@ Global
 		{158BC255-B383-4753-B1EE-B5534D464022} = {861B554A-CB23-4BD5-BC9B-7FB7FF9BF166}
 		{C822706A-2A96-4E8F-ACE3-26FA3D29A02F} = {861B554A-CB23-4BD5-BC9B-7FB7FF9BF166}
 		{5DE1BB54-5B95-4E86-85CF-5C4371FB2D4D} = {F62FA8FB-4D14-4803-8C89-C18630E0D152}
+		{911667BD-D6F3-4EFE-8064-9A4E3CEC3B74} = {861B554A-CB23-4BD5-BC9B-7FB7FF9BF166}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1DD6992F-2C51-46B6-A323-4CEBC66244F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -42,5 +45,9 @@ Global
 		{5DE1BB54-5B95-4E86-85CF-5C4371FB2D4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DE1BB54-5B95-4E86-85CF-5C4371FB2D4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DE1BB54-5B95-4E86-85CF-5C4371FB2D4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{911667BD-D6F3-4EFE-8064-9A4E3CEC3B74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{911667BD-D6F3-4EFE-8064-9A4E3CEC3B74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{911667BD-D6F3-4EFE-8064-9A4E3CEC3B74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{911667BD-D6F3-4EFE-8064-9A4E3CEC3B74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
